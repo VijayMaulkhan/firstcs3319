@@ -1,0 +1,5 @@
+ssh centos@vm124
+^^ DO YOU WORK HERE!!
+
+Password:
+vdaddy
