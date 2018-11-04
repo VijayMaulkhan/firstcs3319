@@ -1,0 +1,24 @@
+SHOW DATABASES;
+DELETE FROM vmaulkhaassign2db;
+CREATE DATABASE vmaulkhaassign2db;
+USE vmaulkhaassign2db;
+SHOW tables FROM vmaulkhaassign2db; /* Necessary? */
+SHOW TABLES;
+
+/* Create Product, int not NULL, ALSO WHERE DOES COST QUANTITY GO?? */
+CREATE TABLE product (productid VARCHAR(2), description VARCHAR(20), cost per item VARCHAR(2), quantity INT NOT NULL, PRIMARY KEY (productid));
+
+/* Create Agent, int not NULL? */
+CREATE TABLE agent (agentid VARCHAR(2), firstname VARCHAR(30), lastname VARCHAR(30), city VARCHAR(15), commission percent FLOAT NOT NULL, PRIMARY KEY (agentid));
+
+/* Create Customer, int not NULL? */
+CREATE TABLE customer (customerid VARCHAR(2), firstname VARCHAR(30), lastname VARCHAR(30), city VARCHAR(15) phone, commission percent INT NOT NULL PRIMARY KEY (agentid));
+
+/*THROW ERROR IF AGENT DELETED HAS CUSTOMER*/
+/*FOREIGN KEYS?*/
+
+GRANT USAGE ON *.* TO 'ta'@'localhost';
+DROP USER 'ta'@'localhost';
+CREATE USER 'ta'@'localhost' IDENTIFIED BY 'cs3319';
+GRANT ALL PRIVILEGES ON vmaulkhaassign2db.* TO 'ta'@'localhost';
+FLUSH PRIVILEGES;

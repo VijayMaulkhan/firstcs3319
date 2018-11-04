@@ -1,5 +1,21 @@
+Git path:
+cd '~/Documents/University/SENIOR/School/Compsci 3319/Assignments/Assignment 2' 
+BELOW IS YOUR VM:
 ssh centos@vm124
 ^^ DO YOU WORK HERE!!
 
+SQL:
+mysql –u root –p
+
+GATEWAY
+User:
+vm124
 Password:
 vdaddy
+
+LOGIC: IN ASSIGNMENT2 DIRECTORY*****
+1) MAKE FILE in Git
+2) Edit in atom
+3) Save, push to Github
+4) VM pulls from Github
+5) Test on VM
